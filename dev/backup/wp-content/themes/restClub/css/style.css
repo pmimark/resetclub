@@ -1,0 +1,1703 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+	font-family:'FuturaLT-Book';
+	src: url('../fonts/Futura/Regular/FuturaLT-Book_gdi.eot');
+	src: url('../fonts/Futura/Regular/FuturaLT-Book_gdi.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Futura/Regular/FuturaLT-Book_gdi.woff') format('woff'),
+		url('../fonts/Futura/Regular/FuturaLT-Book_gdi.ttf') format('truetype'),
+		url('../fonts/Futura/Regular/FuturaLT-Book_gdi.otf') format('opentype'),
+		url('../fonts/Futura/Regular/FuturaLT-Book_gdi.svg#FuturaLT-Book') format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-2122;
+}
+@font-face {
+	font-family:'FuturaLT-BookOblique';
+	src: url('../fonts/Futura/Italic/FuturaLT-BookOblique_gdi.eot');
+	src: url('../fonts/Futura/Italic/FuturaLT-BookOblique_gdi.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Futura/Italic/FuturaLT-BookOblique_gdi.woff') format('woff'),
+		url('../fonts/Futura/Italic/FuturaLT-BookOblique_gdi.ttf') format('truetype'),
+		url('../fonts/Futura/Italic/FuturaLT-BookOblique_gdi.otf') format('opentype'),
+		url('../fonts/Futura/Italic/FuturaLT-BookOblique_gdi.svg#FuturaLT-BookOblique') format('svg');
+	font-weight: 400;
+	font-style: oblique;
+	font-stretch: normal;
+	unicode-range: U+0020-2122;
+}
+@font-face {
+	font-family:'FuturaLT-Bold';
+	src: url('../fonts/Futura/Bold/FuturaLT-Bold_gdi.eot');
+	src: url('../fonts/Futura/Bold/FuturaLT-Bold_gdi.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Futura/Bold/FuturaLT-Bold_gdi.woff') format('woff'),
+		url('../fonts/Futura/Bold/FuturaLT-Bold_gdi.ttf') format('truetype'),
+		url('../fonts/Futura/Bold/FuturaLT-Bold_gdi.otf') format('opentype'),
+		url('../fonts/Futura/Bold/FuturaLT-Bold_gdi.svg#FuturaLT-Bold') format('svg');
+	font-weight: 700;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-2122;
+}
+@font-face {
+	font-family:'FuturaLT-BoldOblique';
+	src: url('../fonts/Futura/Bold-italic/FuturaLT-BoldOblique_gdi.eot');
+	src: url('../fonts/Futura/Bold-italic/FuturaLT-BoldOblique_gdi.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Futura/Bold-italic/FuturaLT-BoldOblique_gdi.woff') format('woff'),
+		url('../fonts/Futura/Bold-italic/FuturaLT-BoldOblique_gdi.ttf') format('truetype'),
+		url('../fonts/Futura/Bold-italic/FuturaLT-BoldOblique_gdi.otf') format('opentype'),
+		url('../fonts/Futura/Bold-italic/FuturaLT-BoldOblique_gdi.svg#FuturaLT-BoldOblique') format('svg');
+	font-weight: 700;
+	font-style: oblique;
+	font-stretch: normal;
+	unicode-range: U+0020-2122;
+}
+
+
+html{
+   height:100%;	
+  }
+
+
+body{
+	font-family: 'FuturaLT-Book';
+	margin:0;
+	padding:0;
+    height:100%;	
+	
+	 -webkit-font-smoothing: antialiased;
+ }*::focus{
+		outline:0 none;
+		}
+ul, ol{
+	margin:0;
+	padding:0;
+	}
+li{
+	list-style:none;
+	}	
+li a, a:hover{
+	text-decoration:none;
+	}
+	
+img{
+	max-width:100%;
+	}
+textarea {
+	resize:none;
+	}		
+a:focus, a:hover{
+text-decoration:none;
+outline:0 none;
+	}		
+ .btn:focus, a::focus{
+	 outline:0 none;
+	 }
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn.focus:active, .btn:active:focus, .btn:focus,
+button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus {
+  outline:0 none;
+  outline-offset: -2px;
+}	
+h1, h2, h3, h4, h5, h6, h7{
+  font-family: 'FuturaLT-Bold';  	
+ }
+ 
+.welcome-page::after, .welcome-page::before,
+.start-container::after, .start-container::before {
+  clear: both;
+  content: "";
+  display: table;
+} 
+ 
+/*******************************
+  Welcome-page Start Here
+  ******************/ 
+ 
+ 
+.logo {
+  display: inline-block;
+  width: auto;
+} 
+ 
+.welcome-page{
+	background-image:url(../images/site-banner.jpg);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+	-webkit-background-size:cover;
+  display:block;
+  height:100%;
+  padding:50px 0 24px;	
+ } 
+  
+.start-container {
+  height: 100%;
+  margin: auto;
+  padding: 0 0 100px;
+  position: relative;
+  text-align: center;
+  width: 500px;
+}
+.intent-container {
+  color: #fff;
+  margin-top: 30px;
+}
+.intent-container p {
+  font-family: "FuturaLT-Book";
+  font-size: 16px;
+  line-height: 28px;
+}
+.intent-container p span{
+   color:#fee900;
+   font-family:'FuturaLT-Bold';	 
+ }
+ 
+.btn.btn-default.btn-home-join {
+	background-color:#6d0a03;
+	border-top:0 none;
+	border-left:0 none;
+	border-right:0 none;
+	border-bottom:4px solid #4b0702;
+  border-radius: 50px;
+  color:#fff;
+  font-size:20px;
+  padding:10px 50px 8px  50px;
+  text-transform:uppercase;
+} 
+.btn.btn-default.btn-home-join::after {
+  background-image:url(../images/arrow-r.png);
+  background-repeat:no-repeat;
+  background-position:center;
+  content: "";
+  display: inline-block;
+  height: 18px;
+  margin-left: 10px;
+  width: 25px;
+}
+.intent-container .btn {
+  margin-bottom: 12px;
+}
+.quicklinks li {
+  border-left: 1px solid #a5a5a5;
+  display: inline-block;
+  line-height: 14px;
+  margin: 0 10px;
+  padding-left: 18px;
+}
+.quicklinks li:first-child{
+  border-left:0 none;
+  margin-left:0;
+  padding-left:0;	
+ } 
+.quicklinks li:last-child{
+  margin-right:0;	
+ } 
+.quicklinks li a{
+  color:#a5a5a5;
+  font-size:16px;	
+ } 
+.intent-container p a:hover{
+  color:#6d0a03;	
+ } 
+.intent-container p a{
+  color:#fff;	
+ } 
+.copy-right p{
+  color:#777777;	
+  margin:0;	
+ } 
+ .welcome-page-footer {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+
+.quicklinks {
+  display: block;
+  padding: 30px 0 10px;
+  width:100%;
+}
+.social-icons li {
+  border-right: 1px solid #474747;
+  display: inline-block;
+  line-height: 12px;
+  margin-right: 5px;
+  padding-right: 12px;
+  vertical-align: top;
+}
+.copy-right {
+  display:block;
+  width: 100%;
+}
+.social-icons li:last-child {
+  border: 0 none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+.social-icons li a{
+  color:#848484;
+}
+
+.social-icons li:hover a{
+  color:#740b03;	
+ }
+
+.btn.btn-default.btn-home-join:hover,
+.btn.btn-default.btn-submit:hover,
+.btn.btn-default.btn-create:hover,
+.btn.btn-default.btn-update:hover,
+.btn.btn-default.btn-up:hover,
+.btn.btn-default.btn-webinor:hover,
+.btn.btn-default.btn-continue:hover{
+  background-color:#7e3030;
+  border-color:#5f3131;	
+ }
+.site-header::after, .site-header::before,
+.sign-in-section::after, .sign-in-section::before,
+.member-log-in-section::after, .member-log-in-section::before,
+.login-with-social::after, .login-with-social::before,
+.profile-page::after, .profile-page::before,
+.audio-codes::after, .audio-codes::before {
+  clear: both;
+  content: "";
+  display: table;
+} 
+.site-header{
+	background-image:url(../images/log-in-page.jpg);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+	-webkit-background-size:cover;
+  display:block;
+  padding:25px 0;	
+  text-align:center;
+ } 
+.site-header .logo {
+  width: 150px;
+} 
+
+.site-footer {
+	background-image:url(../images/log-in-page.jpg);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+	-webkit-background-size:cover;
+	padding:0 0 20px;
+  text-align: center;
+} 
+ 
+.sign-in-section h2 {
+  color: #262626;
+  font-size: 38px;
+  margin: 20px 0 40px;
+}
+.sign-in-section {
+  display: block;
+  margin: 30px auto 70px;
+   text-align: center;
+  width: 320px;
+}
+
+.btn.btn-default.btn-fb {
+	background-color:#3b5998;
+  background-image: url("../images/facebook.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  border: 0 none;
+  border-radius: 40px;
+  color: #fff;
+  font-family: "FuturaLT-Book";
+  padding: 20px 30px 18px 58px;
+  text-transform: uppercase;
+}
+.btn.btn-default.btn-fb:hover{
+  opacity:0.8;	
+ }
+ 
+.sign-in-section h4{
+  position:relative;	 
+}
+.sign-in-section h4::before {
+  background-color: #d0d0d0;
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  right: 58%;
+  top: 10px;
+}
+.sign-in-section h4::after {
+  background-color: #d0d0d0;
+  content: "";
+  height: 1px;
+  right: 0;
+  position: absolute;
+  left: 58%;
+  top: 10px;
+}
+
+.sign-in-section .form-control {
+  border-radius: 50px;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  font-size:17px;
+  height: 55px;
+  margin-bottom:15px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.sign-in-section .form-control::-webkit-input-placeholder,
+.basic-information .form-control::-webkit-input-placeholder {
+   color: #989898;
+}
+
+.sign-in-section .form-control:-moz-placeholder,
+.basic-information .form-control:-moz-placeholder { /* Firefox 18- */
+   color:#989898;  
+}
+.col-sm-7.text-center > img {
+  margin-top: 8px;
+}
+.sign-in-section .form-control::-moz-placeholder,
+.basic-information .form-control::-moz-placeholder {  /* Firefox 19+ */
+   color:#989898;  
+}
+
+.sign-in-section .form-control:-ms-input-placeholder,
+.basic-information .form-control:-ms-input-placeholder {  
+   color:#989898;  
+}
+
+.remb-check {
+	color:#262626;
+	font-size:18px;
+  font-weight: normal;
+}
+.remb-check input[type="checkbox"] {
+  margin-right: 6px;
+}
+
+.btn.btn-default.btn-submit {
+  background-color: #6d0a03;
+  border-color: #6d0a03 #6d0a03 #4b0702;
+  border-radius: 50px;
+  border-style: solid;
+  border-width: 1px 1px 5px;
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  margin: 15px 0 25px;
+  padding: 12px 20px 10px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.sign-in-section p{
+  color:#262626;
+  font-size:18px;	
+ }
+.sign-in-section p a{
+  color:#262626;	
+ }
+.sign-in-section p a:hover{
+   color:#740b03;	
+ }
+.member-log-in-section {
+  margin: 30px auto 70px;
+  text-align:center;
+  width: 940px;
+}
+.member-log-in-section h2 {
+  font-family: "FuturaLT-Book";
+  margin: 15px 0 25px;
+}
+.member-log-in-section h2 strong{
+  color:#e8b400;
+  font-family:'FuturaLT-Bold';	
+ } 
+ .login-with-social {
+  text-align: center;
+}
+.btn.btn-default.btn-create{
+  background-color: #6d0a03;
+  border-color: #6d0a03 #6d0a03 #4b0702;
+  border-radius: 50px;
+  border-style: solid;
+  border-width: 1px 1px 5px;
+  color: #fff;
+  font-family: "FuturaLT-Book";
+  font-size: 18px;
+  padding: 15px 30px 12px;
+  text-transform: uppercase;	
+ } 
+.btn.btn-default.btn-create::after{
+	
+  background-image: url("../images/arrow-r.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  content: "";
+  display: inline-block;
+  height: 18px;
+  margin-left: 10px;
+  width: 25px;
+	
+ } 
+ 
+span.seperater {
+  color: #272727;
+  font-family: "FuturaLT-Bold";
+  font-size: 16px;
+  padding: 10px;
+  vertical-align: middle;
+}
+
+.login-with-social h3 {
+	color:#282828;
+  font-family: "FuturaLT-Book";
+  line-height: 38px;
+  margin: 28px 0;
+}
+.login-with-social h3 a{
+  color:#282828; 	
+ } 
+.login-with-social h3 a:hover{
+	color:#740b03;
+} 
+
+.account-information::after, .account-information::before,
+.basic-information::after, .basic-information::before {
+   content:'';
+   clear:both;
+   display:table; 
+} 
+.account-information {
+  background-color: #f8f8f8;
+  border: 1px solid #dfdfdf;
+  display: block;
+  padding: 30px 40px;
+   margin-top: 0;
+  text-align: left;
+ }
+.account-information h3 {
+  color: #262626;
+  font-family: "FuturaLT-Book";
+  margin: 0;
+  text-transform: uppercase;
+}
+ 
+.basic-information .form-control {
+	box-shadow:none;
+	-webkit-box-shadow:none;
+	border:1px solid #cfcfcf;
+  border-radius: 50px;
+  display: inline-block;
+  font-size: 16px;
+  height: 55px;
+   margin-left: 15px;
+  padding-left: 22px;
+  padding-right: 22px;
+  width: 31.77%;
+}
+.basic-information .form-control:first-child {
+  margin-left: 0;
+}
+.promo-code-section .form-control {
+  width: 49%;
+}
+.basic-information ul {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.promo-code-section p {
+  color:#262626;	
+  display: inline-block;
+  font-family: "FuturaLT-Bold";
+  font-size: 26px;
+}
+.promo-code-section {
+  display: block;
+  margin-top: 28px;
+}
+.basic-information {
+  display: block;
+  margin-top: 25px;
+}
+
+.basic-information ul li {
+  background-image: url("../images/check.png");
+  background-position: left center;
+  background-repeat: no-repeat;
+  color: #262626;
+  display: inline-block;
+  font-size: 20px;
+  margin-left: 12px;
+  padding-left: 30px;
+  vertical-align: top;
+}
+.basic-information ul li:last-child {
+  background-image: none;
+  display: block;
+  margin-left: 0;
+  margin-top: 18px;
+  padding: 0;
+}
+
+.basic-information ul li:first-child {
+  margin: 0;
+}
+.profile-page {
+  display: block;
+  padding: 30px 0 0;
+}
+.profile-page h2 {
+  color: #262626;
+  font-size: 38px;
+  margin-bottom: 45px;
+  text-align: center;
+}
+.m-badge h3{
+	color:#262626;
+  font-family: "FuturaLT-Book";
+  font-size:25px;	
+ }
+.m-badge p{
+  color:#262626;	
+ }
+ .badges li {
+  display: inline-block;
+  margin-left: 20px;
+  width: 66px;
+  
+  transition:0.5s;
+  -webkit-transition:0.5s;
+  -moz-transition:0.5s;
+  -ms-transition:0.5s;
+}
+
+.badges li a{
+   transition:0.5s;
+  -webkit-transition:0.5s;
+  -moz-transition:0.5s;
+  -ms-transition:0.5s;	
+ }
+ .badges li:first-child{
+  margin:0;	 
+	}
+
+.badges li:hover a,
+.badges li:hover{
+	transform:scale(1.1);
+	-webkit-transform:scale(1.1);
+	-moz-transform:scale(1.1);
+ }
+ 
+ 
+.prifile-p {
+  display: block;
+  text-align: center;
+}
+.prifile-p > img {
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 2px #cfcfcf;
+  -webkit-box-shadow: 0 0 0 2px #cfcfcf;
+}
+.profil-setup {
+  margin-top: 30px;
+}
+
+.form-section .form-control {
+  border-radius: 50px;
+  border:1px solid #dadada;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+   color:#969696;
+  font-size: 16px;
+  height: 55px;
+  margin-bottom:15px;
+  padding-left: 25px;
+}
+
+.btn-group.bootstrap-select.form-control {
+	border:0 none;
+  padding-left: 0;
+}
+.bootstrap-select.form-control button {
+  border-radius: 50px;
+  box-shadow:none;
+  -webkit-box-shadow:none;
+  color:#969696;
+  font-size: 16px;
+  height: 55px;
+  padding-left: 24px;
+  width: 100%;
+}
+.bootstrap-select.form-control.open button{
+    background-color:#fff;
+	box-shadow:none;
+  -webkit-box-shadow:none;	
+ } 
+
+.form-control:hover, .form-control:focus{
+  border:1px solid #adadad;	
+ }
+ 
+.bootstrap-select.form-control:hover,
+.bootstrap-select.form-control:focus{
+	 background-color:#fff;
+  border:0 none;	
+ } 
+ 
+.bootstrap-select.form-control button .bs-caret {
+ 
+}
+.bootstrap-select.form-control button .bs-caret .caret {
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px dashed #c2c2c2;
+   margin-right: 8px;
+}
+ 
+.bootstrap-select.form-control button:hover,
+.bootstrap-select.form-control button:focus {
+  background: #fff none repeat scroll 0 0;
+  border:1px solid #adadad;	
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  
+   outline:0 none !important;
+    outline-offset: -2px;
+}
+.btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default.focus:active, .btn-default:active:focus, .btn-default:active:hover, .open > .dropdown-toggle.btn-default.focus, .open > .dropdown-toggle.btn-default:focus, .open > .dropdown-toggle.btn-default:hover{
+  background: #fff;
+  border:1px solid #adadad;	
+ }
+.btn-group.bootstrap-select.form-control .dropdown-menu {
+  border-radius: 8px;
+  padding:0;
+} 
+ 
+.btn-group.bootstrap-select.form-control .dropdown-menu .dropdown-menu.inner li {
+  border-bottom: 1px solid #dcdcdc;
+  padding:0;
+} 
+
+.btn-group.bootstrap-select.form-control .dropdown-menu .dropdown-menu.inner li a {
+  padding: 10px 24px;
+}
+.col-md-6.padd-right {
+  padding-right: 5px;
+}
+
+.col-md-6.padd-left {
+  padding-left: 5px;
+}
+.check-selection label {
+  color: #262626;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.check-selection label input[type="checkbox"] {
+  margin-left: 5px;
+  margin-right: 12px;
+}
+
+.check-selection {
+  display: block;
+  margin: 10px 0;
+}
+.prifile-p > h3{
+  color:#262626;
+  font-family: "FuturaLT-Book";	
+ }
+.btn.btn-default.btn-up{
+	background-color:#740b03;
+  border-bottom:4px solid #4b0702;
+  border-left:0 none;
+  border-right:0 none;
+  border-top:0 none;	
+  border-radius:50px;
+  color:#fff;
+  font-size:18px;
+  padding:10px 40px 8px;
+  text-transform:uppercase;	
+ }
+.btn.btn-default.btn-update{
+ 	background-color:#740b03;
+  border-bottom:4px solid #4b0702;
+  border-left:0 none;
+  border-right:0 none;
+  border-top:0 none;	
+  border-radius:50px;
+  color:#fff;
+  font-size:18px;
+   margin-top: 15px;
+  padding:10px 70px 8px;
+  text-transform:uppercase;	
+ }
+.Commitment .col-md-6 .col-sm-8 .btn-group.bootstrap-select.form-control {
+  height:auto;
+  width: auto;
+}
+.Commitment .col-md-6 .col-sm-8 .bootstrap-select.form-control button {
+  font-size: 14px;
+  height: 35px;
+  padding: 0 32px 0 25px;
+}
+.Commitment .col-md-6 .col-sm-8 .bootstrap-select.form-control button .bs-caret .caret {
+  border-width: 5px;
+  margin: -3px 0 0;
+}
+
+.Commitment .col-md-6 .col-sm-4 p {
+  color: #262626;
+  font-size: 16px;
+  margin: 0;
+  padding-top: 5px;
+}
+.Commitment::after, .Commitment::before {
+  clear: both;
+  content: "";
+  display: table;
+}
+.Commitment{
+  display:block;
+  padding:10px 0 0px;	
+ }
+
+.Commitment textarea.form-control {
+  border-radius: 45px;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  height: 150px;
+  padding: 12px 30px;
+}
+.Commitment input.form-control {
+  box-shadow:none;
+  -webkit-box-shadow:none;
+  border-radius: 50px;
+  width: 100px;
+}
+.Commitment .row {
+  margin-bottom: 15px;
+}
+.mar-gin-lef {
+  float: right;
+}
+hr {
+  border-color: #d8d8d8;
+  margin: 40px 0 30px;
+}
+.payment-info {
+  display: block;
+  padding: 0 0 50px;
+}
+
+.payment-info .form-control{
+  box-shadow:none;
+  -webkit-box-shadow:none;
+  border-radius:50px;
+      height: 54px;
+	  padding-left:20px;
+	  padding-right:20px;
+	  text-align:left;
+}
+.row.mb00 .col-sm-5 p {
+	color:#262626;
+	font-size:18px;
+  margin: 16px 0 0;
+}
+
+.payment-info > h2 {
+  color: #262626;
+  font-family: "FuturaLT-Book";
+  font-size: 29px;
+}
+.row.mb00 {
+  margin-bottom: 20px;
+}
+.audio-codes {
+  margin: 0 auto;
+  text-align: center;
+  width: 590px;
+}
+
+.form-in-page::after, .form-in-page::before {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.form-in-page{
+  display:block;
+  margin:0;
+  padding:20px 0 70px;
+} 
+.audio-codes h2 {
+  color: #262626;
+  font-size: 33px;
+  margin-bottom: 25px;
+}
+.form-in-page hr{
+  border-color:#c7c7c7;
+  margin:55px 0 30px;	
+ }
+.webinar-semi::after, .webinar-semi::before {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.webinar-semi{
+  background-color:#e5e5e5;
+  border:1px solid #d7d7d7;
+  border-radius:3px;
+  display:block;
+  padding:15px 30px;
+  text-align:left;
+}
+.webinar-semi ul li, .webinar-semi ul li a,
+.pdf-semi ul li, .pdf-semi ul li a,
+.links-semi ul li, .links-semi ul li a {
+  color:#262626; 	
+  font-size: 22px;
+}
+.webinar-semi ul li,
+.pdf-semi ul li {
+  margin: 0 0 12px;
+}
+
+.links-semi ul li:last-child,
+.pdf-semi ul li:last-child,
+.webinar-semi ul li:last-child{
+  margin:0;	
+ }
+.btn.btn-default.btn-webinor {
+  background-color:#6d0a03;
+  border-bottom:5px solid #4b0702;
+  border-top:0 none;
+  border-left:0 none;
+  border-right:0 none;
+  border-radius:50px;
+  color:#fff;
+  font-size:18px;
+  margin-top: 40px;
+  padding:14px 38px 10px;
+  text-transform: uppercase;
+}
+.pdf-semi::after, .pdf-semi::before{
+  content:'';
+  clear:both;
+  display:table;	
+ }
+.pdf-semi{
+   background-color:#e5e5e5;
+   border:1px solid #d7d7d7;
+   border-radius:3px;
+  display:block;
+  padding:15px 30px;
+  text-align:left;	
+ }
+
+.pdf-semi ul li{
+ position:relative;
+ padding-left:30px;	
+ }
+
+.pdf-semi ul li::before {
+  background-image: url("../images/pdf.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  content: "";
+  display: inline-block;
+  height: 22px;
+  left:0;
+  position:absolute;
+  top:3px;
+  width: 20px;
+}
+
+.links-semi::after, .links-semi::before,
+.anouncement::after, .anouncement::before,
+.reminders::after, .reminders::before {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.links-semi {
+  background-color: #e5e5e5;
+  border: 1px solid #d7d7d7;
+  border-radius:3px;
+  display: block;
+  padding: 15px 20px 15px;
+  text-align: left;
+}
+.links-semi ul li{
+ margin:0 0 12px;
+}
+
+.anouncement {
+  display: block;
+  padding: 45px 0;
+}
+.rest-section ul li {
+  display: inline-block;
+  font-size: 19px;
+  margin: 0 0 25px;
+  vertical-align: top;
+  width: 49%;
+}
+.rest-section ul{
+  margin-top:22px;	
+ }
+.rest-video-section {
+  padding-top: 24px;
+} 
+.rest-section h2 {
+  border-bottom: 1px solid #e9e9e9;
+  display: inline-block;
+  font-family: "FuturaLT-Book";
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  position: relative;
+}
+.rest-section h2 span{
+  color:#710600; 	
+ }
+.rest-section h2::after {
+  background-color: #e9e9e9;
+  bottom: 0;
+  content: "";
+  height: 4px;
+  left: 0;
+  position: absolute;
+  width: 175px;
+}
+.rest-section h4 + p {
+  font-size: 19px;
+}
+.rest-section h4 {
+  font-size: 22px;
+}
+.rest-section ul li::before {
+  background-color: #00adef;
+  border:1px solid #8f8f8f;
+  border-radius: 100%;
+  content: "";
+  display: inline-block;
+  height: 40px;
+  margin-right: 10px;
+  vertical-align: middle;
+  width: 40px;
+}
+.rest-section ul li.style.type0::before{
+	background-image:url(../images/round0.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:100%;	
+ }
+.rest-section ul li.style.type1::before{
+	background-image:url(../images/round1.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:100%;	
+ } 
+ 
+.rest-section ul li.style.type2::before{
+	background-image:url(../images/round2.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:100%;	
+ } 
+ 
+.rest-section ul li.style.type3::before{
+	background-image:url(../images/round3.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:100%;	
+ } 
+.rest-section ul li.style.type4::before{
+	background-image:url(../images/round4.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:100%;	
+ }    
+.rest-section ul li.style.type5::before{
+	background-image:url(../images/round5.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:100%;	
+ }    
+.rest-section ul li.style.type6::before{
+	background-image:url(../images/round6.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:100%;	
+ }   
+.text-center.ins > h4 {
+  font-family: "FuturaLT-Book";
+  font-size: 22px;
+  line-height: 35px;
+}
+.text-center.ins > h4 span{
+  font-family:'FuturaLT-BookOblique';	
+ } 
+ 
+.reminders {
+  background-color: #f8f8f8;
+  display: block;
+  margin-top: 40px;
+  padding: 20px 0 40px;
+}
+.reminders h3 {
+  border-bottom: 3px solid #e9e9e9;
+  color: #272727;
+  display: inline-block;
+  font-family: "FuturaLT-Book";
+  font-size: 30px;
+  padding: 0 30px 10px 0;
+  text-transform: uppercase;
+}
+.dated-post li {
+  border-right: 1px solid #c3c3c3;
+  color:#272727;
+  display: inline-block;
+  line-height: 12px;
+  margin-right: 5px;
+  padding-right: 8px;
+  vertical-align: top;
+}
+.dated-post li:last-child{
+  border-right:0 none;	
+ }
+.dated-post li i{
+  color:#8b8b8b;
+  margin-right:3px;	
+ }	
+.dated-post {
+  margin: 0 0 12px;
+}
+.reminders p {
+  font-size: 20px;
+  line-height: 35px;
+}
+
+.reminder-section p {
+  font-size: 16px;
+}
+.reminder-section div:nth-child(2n+3) {
+  clear: both;
+}
+
+.reminder-section .col-sm-6 .form-control {
+  border-radius: 50px;
+  border:1px solid #ededed;
+  box-shadow:none;
+  -webkit-box-shadow:none;
+  font-size:16px;
+  height: 55px;
+  padding: 0 25px;
+}
+.row.reminder-section .col-sm-6 {
+  margin-bottom: 10px;
+}
+.reminder-section .col-sm-6 .form-control::-webkit-input-placeholder {
+   color: #a5a5a5;
+}
+
+.reminder-section .col-sm-6 .form-control:-moz-placeholder { /* Firefox 18- */
+   color:#a5a5a5;  
+}
+
+.reminder-section .col-sm-6 .form-control::-moz-placeholder {  /* Firefox 19+ */
+   color: #a5a5a5;  
+}
+
+.reminder-section .col-sm-6 .form-control:-ms-input-placeholder {  
+   color:#a5a5a5;  
+}
+
+.btn.btn-default.btn-continue {
+	background-color:#740b03;
+	border-bottom:4px solid #4b0702;
+	border-top:0 none;
+	border-left:0 none;
+	border-right:0 none;
+  border-radius: 50px;
+  color:#fff;
+  font-size: 18px;
+  padding: 14px 0 10px;
+  text-transform: uppercase;
+  width: 100%;
+}
+.bottom-text {
+  text-align: center;
+}
+.bottom-text h3 {
+  font-size: 38px;
+  line-height: 45px;
+}
+.bottom-text h3 span{
+  	color:#e8b400;
+}
+.btn.btn-default.btn-continue.width {
+  margin-top: 30px;
+  padding: 12px 47px 8px;
+  width: auto;
+}
+
+.progreess-section::after, .progreess-section::before,
+.form-pagecontent::after, .form-pagecontent::before,
+.acept-chalenge::after, .acept-chalenge::before {
+  clear: both;
+  content: "";
+  display: table;
+}
+.progreess-section{
+  background-color:#bee9fc;
+  background-image:url(../images/water-drops.png);
+  background-repeat:no-repeat;
+  background-position:center center;
+  clear:both;
+  display:block;
+  padding:30px 15px 20px;
+  text-align:center;	
+ }
+.form-pagecontent {
+  clear: both;
+  display: block;
+  padding: 70px 0;
+}
+.progreess-section h2 {
+  color: #740b03;
+}
+.current-challenge {
+  border-top: 1px solid #e9f7fe;
+  display: block;
+  margin-top: 25px;
+}
+
+.current-challenge > h3{
+  font-family:'FuturaLT-Book';
+  font-size:22px;
+  text-transform:uppercase;	
+ }
+.current-challenge > h3 span {
+  color:#740b03;	
+  display: block;
+  padding: 8px 0 0;
+  text-transform: lowercase;
+} 
+ 
+.acept-chalenge {
+  border-top: 1px solid #e9f7fe;
+  display: block;
+  padding: 12px 0 0;
+} 
+.acept-chalenge label{
+  font-weight:normal;
+  font-size:16px;	
+ } 
+.acept-chalenge input[type="checkbox"] {
+  margin-right: 5px;
+}
+.event-section::after, .event-section::before,
+.my-badges::after, .my-badges::before,
+.support-group::after, .support-group::before,
+.form-frame::after, .form-frame::before,
+.r-pofile-post:after, .r-pofile-post:before,
+.commect-section::after, .commect-section::before,
+.coments-views::after, .coments-views::before,
+.comments-people::after, .comments-people::before {
+  clear: both;
+  content: "";
+  display: table;
+}
+.event-section {
+  border-top: 1px solid #e9f7fe;
+  display: block;
+  margin-top: 5px;
+  padding: 8px 0 0;
+}
+.event-section h4{
+ font-family:'FuturaLT-Book';
+ font-size:18px;  	
+ }
+.my-badges {
+  border-bottom: 1px solid #e9f7fe;
+  border-top: 1px solid #e9f7fe;
+  display: block;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  padding: 0 0 15px;
+}
+.my-badges h3 {
+	color:#740b03;
+	 font-family:'FuturaLT-Book';
+  margin-top: 18px;
+  text-transform: uppercase;
+}
+.my-badges img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50px;
+}
+.support-group h2{
+ color:#2c2c2c;
+ font-size:35px;
+}
+.support-group > h2 {
+  border-bottom: 1px solid #d6d6d6;
+  margin-top: 24px;
+  padding: 0 0 18px;
+  text-align: center;
+}
+
+.form-frame {
+  display: block;
+  padding:0px 12px 0 0;
+}
+.form-frame .mCSB_scrollTools.mCSB_1_scrollbar.mCS-minimal-dark.mCSB_scrollTools_vertical {
+  margin: 10px 0;
+}
+.blog-profile img {
+  float: left;
+  height: 80px;
+  margin-right: 12px;
+  width: 80px;
+}
+.blog-profile h4 {
+  color: #2c2c2c;
+  font-family: "FuturaLT-Book";
+  font-size: 22px;
+  margin-bottom: 5px;
+  padding-top: 14px;
+}
+.blog-profile p{
+  color:#919191;
+  font-size:18px;	
+ } 
+
+.r-pofile-post {
+  display: block;
+  padding: 18px 0 8px;
+}
+.r-pofile-post p{
+	color:#2c2c2c;
+  font-size:18px;	
+ }
+.commect-section{
+  clear:both;
+  display:block;	
+ }
+.commect-section ul li {
+	  color:#686868;	
+  display: inline-block;
+  font-size: 17px;
+  margin-right: 30px;
+  vertical-align: top;
+}
+.commect-section ul li a{
+  color:#686868;	
+ }
+.commect-section ul li:hover a,
+.commect-section ul li a.active,
+.commect-section ul li:hover{
+  color:#740b03;	
+ } 
+ 
+.commect-section ul li i{
+  margin-right:5px;	
+ } 
+.commect-section ul li:last-child{
+  margin-right:0;	
+ }
+.commect-section {
+  border-top: 1px solid #d6d6d6;
+  clear: both;
+  display: block;
+  padding:12px 0;
+}
+
+.coments-views {
+  background-color: #f1f1f1;
+  clear: both;
+  display: block;
+  padding: 15px 15px;
+}
+.comments-counter {
+  border-bottom: 1px solid #d6d6d6;
+  display: block;
+  margin-bottom: 10px;
+  padding: 0 10px 10px;
+}
+
+.comments-counter a {
+  color: #740b03;
+  font-size:18px;
+}
+.comments-counter a i {
+  background-color: #740b03;
+  border-radius: 100%;
+  color: #fff;
+  font-size: 15px;
+  height: 28px;
+  line-height: 26px;
+  margin-right: 8px;
+  text-align: center;
+  width: 28px;
+}
+.view-comments {
+	color:#818181;
+  display: inline-block;
+  margin-left: 10px;
+}
+.view-comments:hover{
+	 color:#740b03;
+ }
+.comments-people {
+  display: block;
+  margin-top: 12px;
+  padding: 0 10px;
+}
+.comments-people {
+  
+  display: block;
+  margin-top: 12px;
+  padding: 0 10px;
+}
+.commnent-block {
+  float: left;
+  width: 82%;
+}
+.commnent-block > p{
+	color:#2c2c2c;
+    font-size:18px;
+	line-height:25px;	
+ }
+.comments-people img {
+  float: left;
+  margin-right: 12px;
+  margin-top: 8px;
+}
+.commnent-block p {
+  color: #2c2c2c;
+  font-family: "FuturaLT-Book";
+  font-size: 17px;
+  line-height: 30px;
+}
+.commnent-block p span{
+  color:#740b03;	
+}
+.your-comments {
+  border-top: 1px solid #ddd;
+  display: block;
+  padding: 12px 10px 0;
+}
+.coment-pic {
+  float: left;
+  margin-right: 15px;
+}
+.comment-box {
+  display: block;
+  margin-left: 90px;
+}
+.comment-box .form-control {
+  border-radius: 0;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  font-size: 15px;
+  height: 73px;
+  padding: 5px 10px;
+  width: 100%;
+}
+
+.comment-box .form-control::-webkit-input-placeholder {
+   color: #a8a8a8;
+}
+
+.comment-box .form-control:-moz-placeholder { /* Firefox 18- */
+  color: #a8a8a8; 
+}
+
+.comment-box .form-control::-moz-placeholder {  /* Firefox 19+ */
+  color: #a8a8a8; 
+}
+
+.comment-box .form-control:-ms-input-placeholder {  
+  color: #a8a8a8; 
+}
+.group-progress::after, .group-progress::before {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.group-progress {
+  background-color: #f3f3f3;
+  display: block;
+  padding:0 15px 22px;
+}
+.group-progress h2 {
+  color: #740b03;
+  font-size: 27px;
+  line-height: 40px;
+  margin-bottom:0;
+  text-align: center;
+}
+.group-progress h2 + p {
+  color:#2c2c2c;
+  font-size:17px;	
+  margin: 0;
+  text-align: center;
+}
+.group-progress select.form-control {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  
+  color:#838383;
+  margin-top: 18px;
+  padding:5px 6px;
+}
+
+.category-list {
+  display: block;
+  margin: 18px -15px 8px 0;
+  padding-right: 20px;
+}
+.category-list ul li {
+  display: block;
+  font-size: 16px;
+  margin: 10px 0;
+}
+.category-list ul li span{
+  float:right;	
+ }
+.new-badge-maker {
+  border-top: 1px solid #ccc;
+  display:block;
+}
+.new-badge-maker h3 {
+  color: #740b03;
+  font-family: "FuturaLT-Book";
+  font-size: 20px;
+  margin-top: 15px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.new-badges-list::after, .new-badges-list::before {
+  clear: both;
+  content: "";
+  display: table;
+}
+.new-badges-list {
+  clear: both;
+  display: block;
+  margin: 20px -15px 20px 0;
+  padding-right: 24px;
+}
+.new-badges-list li {
+  clear: both;
+  display: block;
+  font-size: 18px;
+  line-height: 35px;
+  padding: 6px 0;
+}
+
+.new-badges-list li img {
+  float: right;
+  width: 35px;
+}
+.btn.btn-default.btn-profil {
+	background-color:#740b03;
+	border-bottom:4px solid #4b0702;
+	border-top:0 none;
+	border-left:0 none;
+	border-right:0 none;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 18px;
+  padding:12px 40px 10px;
+  text-transform: uppercase;
+}
+.invitation-form::after, .invitation-form::before {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.invitation-form .form-control {
+  border: 1px solid #fff;
+  border-radius: 50px;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  font-size: 16px;
+  height: 45px;
+  margin: 12px 0 0;
+  padding: 10px 15px;
+}
+.invitation-form h3 {
+  color: #740b03;
+  font-family: "FuturaLT-Book";
+  font-size: 20px;
+  margin-bottom: 18px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.new-badges-list li:first-child {
+  padding-top: 0;
+}
+.invitation-form {
+  border-top: 1px solid #d6d6d6;
+  text-align: center;
+}
+.invitation-form .btn.btn-default.btn-profil {
+  margin-top: 12px;
+}
+.category-list ul li:first-child {
+  margin-top: 0;
+}
+
+/********************
+  CHAT_ICONS
+ *************/
+
+.chat-box-wrap::after,
+.chat-box-wrap::before{
+  content:'';
+  clear:both;
+  display:table;	
+ }
+ 
+.chat-box-wrap {
+  width: 400px;
+} 
+.chat-box-wrap .pp {
+  background-color: #fff;
+  border: 1px solid #9b9b9b;
+  border-radius: 100%;
+  float: left;
+  height: 50px;
+  overflow: hidden;
+  width: 50px;
+}
+
+.content-box {
+  background-color: #fff;
+  border-radius: 4px;
+  float: right;
+  padding: 10px 12px;
+  position: relative;
+  width: 75.55%;
+}
+.content-box p {
+  color: #343434;
+  font-size: 13px;
+}
+
+.content-box > ul li {
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: top;
+}
+.content-box > ul li a{
+ color:#343434;
+ font-size:12px;	
+ }  
+.content-box > ul li a i{
+  margin-right:2px;	
+ }
+.content-box::before {
+  border-left: 19px solid transparent;
+  border-top: 16px solid #fff;
+  content: "";
+  left: -18px;
+  position: absolute;
+  top: 23px;
+}
+.chat-blog {
+  bottom: 0;
+  left: 0;
+  opacity: 0.1;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 30px;
+  z-index: 0;
+}
+
+.chat-blog .col-md-6 {
+  padding: 0;
+}
+
+.chat-box-wrap {
+  float: left;
+  margin: 0 22px 60px;
+  width: 42%;
+}
+.chat-blog .col-md-6 .chat-box-wrap:nth-child(2n+2) {
+  margin: 71px 0 30px;
+}
+
+
+
+
+/******************************
+  MEDIA QUERY START
+  ********************/
+  
+@media(min-width:1600px){
+  .container{
+	  width:1500px;  
+    }	
+  .intent-container {
+    margin-top: 70px;
+   }
+  .check-selection label {
+   font-size:18px;    
+  }
+ .content-box {
+     width: 79.55%;
+   }
+ .chat-box-wrap .pp {
+  height: 60px;
+  width: 60px;
+  } 
+
+
+  
+ 
+}  
+ 
+
+
+/*********************************
+  MEDIA  1600 END HERE
+ *************************/
+ 
+@media(min-width:1200px){
+/*.chat-blog .chat-box-wrap:nth-child(2n+2) {
+  clear: right;
+  float: right;
+  margin-top: 20px;
+}
+.chat-blog .chat-box-wrap:nth-child(3n+4) {
+  clear: right;
+  float: right;
+} */
+
+ 
+ 	
+}  

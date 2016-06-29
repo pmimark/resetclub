@@ -1,0 +1,226 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+@font-face {
+  font-family: 'FuturaBT-Book';
+  src: url('../fonts/Futura/Book/FuturaBT-Book.eot?#iefix') format('embedded-opentype'),  url('../fonts/Futura/Book/FuturaBT-Book.otf')  format('opentype'),
+	     url('../fonts/Futura/Book/FuturaBT-Book.woff') format('woff'), url('../fonts/Futura/Book/FuturaBT-Book.ttf')  format('truetype'), url('../fonts/Futura/Book/FuturaBT-Book.svg#FuturaBT-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaBT-Heavy';
+  src: url('../fonts/Futura/Heavy/FuturaBT-Heavy.eot?#iefix') format('embedded-opentype'),  url('../fonts/Futura/Heavy/FuturaBT-Heavy.otf')  format('opentype'),
+	     url('../fonts/Futura/Heavy/FuturaBT-Heavy.woff') format('woff'), url('../fonts/Futura/Heavy/FuturaBT-Heavy.ttf')  format('truetype'), url('../fonts/Futura/Heavy/FuturaBT-Heavy.svg#FuturaBT-Heavy') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Swiss721BT-BlackCondensed';
+  src: url('../fonts/swiss/Swiss721BT-BlackCondensed.eot?#iefix') format('embedded-opentype'),  url('../fonts/swiss/Swiss721BT-BlackCondensed.woff') format('woff'), url('../fonts/swiss/Swiss721BT-BlackCondensed.ttf')  format('truetype'), url('../fonts/swiss/Swiss721BT-BlackCondensed.svg#Swiss721BT-BlackCondensed') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato-Heavy';
+  src: url('../fonts/lato-h/Lato-Heavy.eot?#iefix') format('embedded-opentype'),  url('../fonts/lato-h/Lato-Heavy.woff') format('woff'), url('../fonts/lato-h/Lato-Heavy.ttf')  format('truetype'), url('../fonts/lato-h/Lato-Heavy.svg#Lato-Heavy') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+html {
+  min-height: 100%;
+}
+
+body{
+	background-image:url(../images/background.jpg);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+	-webkit-background-size:cover;
+	height:100%;
+	margin:0;
+	padding:0;	
+ }*::focus{
+		outline:0 none;
+		}
+ul, ol{
+	margin:0;
+	padding:0;
+	}
+li{
+	list-style:none;
+	}	
+li a, a:hover{
+	text-decoration:none;
+	}
+	
+img{
+	max-width:100%;
+	}
+textarea {
+	resize:none;
+	}		
+a:focus, a:hover{
+text-decoration:none;
+outline:0 none;
+	}		
+ .btn:focus, a::focus{
+	 outline:0 none;
+	 }
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn.focus:active, .btn:active:focus, .btn:focus {
+  outline:0 none;
+  outline-offset: -2px;
+}	
+
+.wrap {
+  bottom: 10%;
+  color:#fff;
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 10%;
+}
+
+.wrap h2 {
+  color: #fff;
+  font-family: 'FuturaBT-Heavy';
+  font-size: 96px;
+  text-transform: uppercase;
+}
+
+.wrap p {
+  color: #fff;
+  font-family: 'FuturaBT-Book';
+  font-size:19px;
+}
+.wrap h4 {
+ font-family: 'FuturaBT-Book';
+ font-size:26px;	
+ }
+.progres-section {
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+}
+
+.wrap .container {
+  padding-bottom: 190px;
+  position: relative;
+}
+.progres-section ul li span {
+  background-color: #4c0601;
+  display: block;
+  font-family: "Lato-Heavy";
+  font-size: 16px;
+  padding: 5px 0;
+  text-transform: uppercase;
+}
+.progres-section ul li {
+  background: #750b03;
+  display: inline-block;
+   font-family: 'Swiss721BT-BlackCondensed';
+  font-size:58px;
+  height: 120px;
+  margin: 0 6px;
+  vertical-align: top;
+  width:114px;
+}
+
+
+/***************************
+  MEDIA
+  *********************/
+  
+  
+ @media(max-width:991px){
+  .logo-o {
+  display: block;
+  margin: auto;
+  width: 150px;
+}
+
+.wrap h2 {
+  font-size: 78px;
+}	
+
+.wrap p {
+  font-size: 16px;
+}
+.wrap h4 {
+  font-family: "FuturaBT-Book";
+  font-size: 22px;
+}
+.progres-section ul li span {
+  font-size: 14px;
+
+}
+.progres-section ul li {
+  font-size: 48px;
+  height: 105px;
+  width: 114px;
+}
+.wrap {
+    top: 30%;
+}
+
+ 
+	 
+ } 
+ 
+ @media(max-width:767px){
+  .wrap h2 {
+  font-size: 33px;
+  }
+  
+  .logo-o {
+  display: block;
+  margin: auto;
+  width: 100px;
+}
+.progres-section {
+    position: static;
+    padding: 30px 0;
+}
+.wrap .container {
+  padding-bottom: 0;
+  position: relative;
+}
+.progres-section ul li {
+  font-size: 27px;
+  height:60px;
+  width: 52px;
+}
+.progres-section ul li span {
+  font-size: 8px;
+}
+body{
+  background-size:200%;
+  -webkit-background-size:200%;
+  position:static;
+ }
+
+.wrap {
+    top: 10%;
+} 
+	 
+}
+
+@media(max-width:550px){
+ .wrap {
+    top: 20%;
+} 	
+	
+	
+ }
+ 
